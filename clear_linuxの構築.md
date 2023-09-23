@@ -36,16 +36,16 @@ exit
 wsl --shutdown
 ```
 
-## 自分のユーザーで以下の作業
-
+## ログインし直して以下
 
 ```sh
 sudo swupd update
+exit
 ```
 
 ## ここまでの環境を保存
 
-```sh
+```ps1
 wsl -t Clear
 wsl -l -v
 wsl --export Clear ./clearlinux.tar
@@ -65,7 +65,10 @@ brew install zsh git gh tmux neovim juliaup
 
 # setting
 zsh
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 mkdir git;cd git;gh auth login
+
 gh repo clone izumi4632/dotfiles;
 cd ./dotfiles;_ chmod +x ./*;./make_symbolic_link.sh;./setting_zsh.sh
 
