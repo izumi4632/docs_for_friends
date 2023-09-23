@@ -1,8 +1,10 @@
 # 概要
 
-clear linux導入手順です。
+wslへのclear linux導入手順です。
 
 # WSL2にいれる
+
+on powershell
 
 ```ps1
 docker pull clearlinux
@@ -16,6 +18,7 @@ wsl --import Clear "C:\wsl\clear" .\clearlinux.tar
 
 ## rootで以下の作業
 
+on clear
 
 ```sh
 useradd your_user_name
@@ -32,11 +35,15 @@ exit
 
 ## wsl再起動
 
+on powershell
+
 ```ps1
 wsl --shutdown
 ```
 
 ## ログインし直して以下
+
+on clear
 
 ```sh
 sudo swupd update
@@ -45,6 +52,8 @@ exit
 
 ## ここまでの環境を保存
 
+on powershell
+
 ```ps1
 wsl -t Clear
 wsl -l -v
@@ -52,6 +61,8 @@ wsl --export Clear ./clearlinux.tar
 ```
 
 # 個人的な環境整備
+
+on clear
 
 ```sh
 # brew
