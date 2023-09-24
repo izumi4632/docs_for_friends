@@ -91,6 +91,10 @@ your_user_name:x:1000:1000::/home/your_user_name:/home/linuxbrew/.linuxbrew/bin/
 EOF
 
 # fonts
-brew tap homebrew/cask-fonts
-brew install --cask font-juliamono
+## JuliaMono
+mkdir ~/.fonts
+cd ~/.fonts
+curl -LO https://github.com/cormullion/juliamono/releases/download/v0.051/JuliaMono-ttf.tar.gz
+tar -xzvf ./JuliaMono-ttf.tar.gz
+fc-cache -f -v
 ```
