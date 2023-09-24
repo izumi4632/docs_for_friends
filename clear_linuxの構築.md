@@ -72,7 +72,7 @@ sudo swupd bundle-add git curl
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # install
-brew install zsh git gh tmux neovim juliaup
+brew install zsh git gh tmux neovim juliaup fontconfig
 
 # setting
 zsh
