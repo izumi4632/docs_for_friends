@@ -89,4 +89,8 @@ sudo cat << EOF > /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 your_user_name:x:1000:1000::/home/your_user_name:/home/linuxbrew/.linuxbrew/bin/zsh
 EOF
+
+# fonts
+brew tap homebrew/cask-fonts
+brew install --cask font-juliamono
 ```
