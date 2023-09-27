@@ -72,7 +72,9 @@ sudo swupd bundle-add git curl
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # install
-brew install zsh git gh tmux neovim juliaup fontconfig
+brew install zsh git gh tmux neovim juliaup fontconfig unzip gcc apt volta bun
+## for gt plot
+sudo apt-get install libqtgui4
 
 # setting
 zsh
@@ -92,9 +94,15 @@ EOF
 
 # fonts
 ## JuliaMono
-mkdir ~/.fonts
-cd ~/.fonts
-curl -LO https://github.com/cormullion/juliamono/releases/download/v0.051/JuliaMono-ttf.tar.gz
-tar -xzvf ./JuliaMono-ttf.tar.gz
+mkdir ~/.local/share/fonts/
+cd ~/.local/share/fonts/
+curl -LO https://github.com/cormullion/juliamono/releases/download/v0.051/JuliaMono.zip
+unzip ./JuliaMono.zip
+chmod -R 777 .
 fc-cache -f -v
+
+# gas
+volta install node@20.7
+volta setup
+npx @google/aside init
 ```
