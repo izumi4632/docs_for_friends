@@ -1,0 +1,1 @@
+print(join([i for i=2:100 if all(i%j>0 for j=2:i-1) ],"\n"))
