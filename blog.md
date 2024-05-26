@@ -2,7 +2,7 @@
 
 ## 寝れない
 
-[[https://i.pximg.net/c/600x1200_90/img-master/img/2010/05/06/12/35/18/10473146_p0_master1200.jpg]]
+<img src="https://i.pximg.net/c/600x1200_90/img-master/img/2010/05/06/12/35/18/10473146_p0_master1200.jpg">
 
 # 2024/05/25
 
