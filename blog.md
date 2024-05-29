@@ -1,5 +1,31 @@
 # 2024/05/29
 
+## Quick Checkについて
+
+関数のインプットをスキーマからランダムに生成してくれるらしい。
+
+Haskell発だけど色んな言語に移植されてる。
+
+JUnitがgitだとすればQuickCheckはMercurialなんだと思う。
+
+違う思想が同じ時代に同じものを目指し、そして一つが勝った……
+
+ちなみに使い方はこんな感じらしい。
+
+```ruby
+require 'rantly'
+require 'rantly/property'
+
+# 配列をリバースして再度リバースすると元の配列に戻ることをテストする
+Rantly { array(10) { integer } }.check(100) do |arr|
+  assert_equal arr, arr.reverse.reverse
+end
+
+def assert_equal(expected, actual)
+  raise "Expected #{expected}, but got #{actual}" unless expected == actual
+end
+```
+
 ## テッドチャンの『0で割る』を読みました。
 
 ZeroDivizionError、見慣れた単語。
