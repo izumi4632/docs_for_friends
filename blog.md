@@ -1,5 +1,13 @@
 # 2024/05/29
 
+## gpt4oでページを自動生成する
+
+>I will provide more details about the process later.
+
+とのこと
+
+https://x.com/yancymin/status/1795308932216525229?s=46&t=h8SRCUq4gwyiOzlH5czwUw
+
 ## チロシンについて
 
 これを見た。
