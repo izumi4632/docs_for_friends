@@ -6,6 +6,8 @@
 
 やっぱりまだJiraには遠く及ばないんだけど、GitHubと連携が厚いってことに意味があると思うので。
 
+あ、ガントチャートが引ける点でbacklog使うくらいならこれでいいなと思いました。
+
 ## dotfilesを綺麗にした
 
 https://github.com/izumi4632/dotfiles
